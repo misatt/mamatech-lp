@@ -1,0 +1,64 @@
+/* フォント・全体 */
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f7f5f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #4f7942; /* 深めのグリーン系 */
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #5a5a5a;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+.cta {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.cta a {
+  display: inline-block;
+  background: #6bbf59; /* 明るめのグリーン */
+  color: #ffffff;
+  padding: 0.8em 2em;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.cta a:hover {
+  background: #5ea44d;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #999;
+  margin-top: 3em;
+}
