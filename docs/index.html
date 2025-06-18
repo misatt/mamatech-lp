@@ -1,72 +1,406 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ままてく｜ママのための実践スキル習得プログラム</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ã·ã³ã°ã«ãã¶ã¼åãAIã­ã£ãªã¢è²æãã­ã°ã©ã  - æ1ä¸åããå§ããæ°ããåãæ¹</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 
-<body>
-
-  <div class="container">
-    <!-- ヒーローエリア -->
-    <h1>「時間がない」を言い訳にしない。<br>
-「わかる」から「できる」に</h1>
-    <h2>私自信が日々使っているツールだから、回答が早い！</h2>
-    <p>いままでスキマ時間で何か学ぼうと思ったことはありますか。 <br> 
-    それは挫折しないで最後まで成し遂げれましたか。</p>
-    <p>安心してください。 </p>
-    <p> 
-    ままてくは、ただの「知識習得」がゴールではなく、「その知識をどう活かして収入や自信に変えていくか。」を学ぶことができます。<br>
-    まずは、あなたの“はじめの一歩”です！</p>
-
-    <!-- CTA -->
-    <div class="cta">
-      <a href="LINEの友だち追加URLをここに" target="_blank">LINE登録して情報を受け取る</a>
-    </div>
-
-    <!-- ままてくとは -->
-    <h2>ままてくとは？</h2>
-    <p>子育て中のママが、自分のペースで安心して学べる場所です。  </p>
-    <ul><li>  知識を習得して副業をしたい。</li><li>子育てが落ち着いたらビジネスを始めたい。</li>
-      <li>学んでいく中で方向性を相談したい。</ul>
-      <p>実践的なノウハウを、私自身の経験からお伝えします。</p>
-
-    <!-- ライトプランの存在・価格の意味 -->
-    <h2>ライトプラン（月9,800円〜）</h2>
-    <p>決して安くはないこの金額設定。<br>
-      理由は ”つまずいても安心して質問できる” 環境だからです。<br>実際に私がいまでも現場で使っているツールだからこそ、つまづきポイントがわかるので、すぐに解決できます。</p>
-
-  <h2>こんな人におすすめ</h2>
-
-✔︎ 今まで本やネットで独学したけれど、うまくいかなかった人<br>
-✔︎ ITツールはすぐに仕様が変わるし、見た目も異なるので混乱したことがある人<br>
-✔︎ ちょっとしたエラーの連続で、続ける気力がなくなってしまった人<br>
-✔︎ ChatGPTの言う通りにやってもうまくいかなかった人<br>
-✔︎ 知識は身についたのにそれだけで活かせていない人<br>
-
-    <!-- 体験セッション・個別相談（無料） -->
-    <h2>無料の体験セッション・個別相談</h2>
-    <p>「本当に私にもできるかな？」と不安な方へ。  <br>
-    ままてくでは、無料の体験セッションや個別相談もご用意しています。  
-    LINE登録後にご案内しますので、まずは気軽にLINEからメッセージください。</p>
-
-    <!-- LINE登録で受け取れるPDFガイド -->
-    <h2>LINE登録特典</h2>
-    <p>今なら、ITツールの使い分けガイドPDFを無料でお渡ししています。  
-    まずはLINEで情報を受け取ってみてください。</p>
-
-    <!-- 最終CTA -->
-    <div class="cta">
-      <a href="LINEの友だち追加URLをここに" target="_blank">LINEで無料ガイドを受け取る</a>
-    </div>
-
-    <!-- フッター -->
-    <footer>
-      &copy; 2025 ままてく
-    </footer>
-  </div>
+<link href="style.css" rel="stylesheet"/><script src="script.js"></script></head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+<div class="container mx-auto px-4 py-4">
+<div class="flex justify-between items-center">
+<div class="text-2xl font-bold text-blue-600">
+<i class="fas fa-heart mr-2"></i>ããã­ã£ãªã¢
+                </div>
+<a class="btn-primary text-white px-6 py-3 rounded-full font-semibold" href="#line-register">
+<i class="fab fa-line mr-2"></i>LINEç»é²
+                </a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="gradient-bg text-white pt-24 pb-16">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    AIã®åã§ã<br/>
+<span class="text-yellow-300">å­è²ã¦ããã</span><br/>
+                    æ1ä¸åããå§ãã<br/>
+                    æ°ããåãæ¹
+                </h1>
+<p class="text-xl md:text-2xl mb-8 opacity-90">
+                    ITãè¦æã§ãå¤§ä¸å¤«ãå¤æ´»æéã§ç¤¾ä¼ã¨ã®ã¤ãªãããåãæ»ãã
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="btn-primary text-white px-8 py-4 rounded-full font-bold text-lg" href="#line-register">
+<i class="fab fa-line mr-2"></i>ç¡æã§è©³ç´°ãåãåã
+                    </a>
+<a class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100" href="#program-details">
+<i class="fas fa-info-circle mr-2"></i>ãã­ã°ã©ã è©³ç´°
+                    </a>
+</div>
+<div class="mt-12 floating-animation">
+<i class="fas fa-chevron-down text-3xl opacity-70"></i>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+<i class="fas fa-heart-broken text-red-400 mr-3"></i>
+                    ãããªãæ©ã¿ããã¾ãããï¼
+                </h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-red-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-clock text-red-400 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">æéããªã</h3>
+<p class="text-gray-600">å­è²ã¦ã¨å®¶äºã«è¿½ããã¦ãèªåã®ã¹ã­ã«ã¢ããã®æéãªãã¦åããªã...</p>
+</div>
+<div class="bg-orange-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-exclamation-triangle text-orange-400 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">ã¹ã­ã«ã«ä¸å®</h3>
+<p class="text-gray-600">ITããã½ã³ã³ãè¦æã§ãä»æ´åå¼·ãã¦ãå¤§ä¸å¤«ãªã®ãå¿é...</p>
+</div>
+<div class="bg-blue-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-user-friends text-blue-400 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">å­¤ç¬æ</h3>
+<p class="text-gray-600">ç¤¾ä¼ããåãæ®ããã¦ããæè¦ãåãå¢éã®äººã¨ç¹ãããã...</p>
+</div>
+<div class="bg-green-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-yen-sign text-green-400 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">çµæ¸çä¸å®</h3>
+<p class="text-gray-600">èªåã§ç¨¼ããããã«ãªããããã©ãä½ããå§ãã¦ãããããããªã...</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="py-16 gradient-green text-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-8">
+<i class="fas fa-lightbulb mr-3"></i>
+                    ãã®ãæ©ã¿ãAIã®åã§è§£æ±ºãã¾ãï¼
+                </h2>
+<p class="text-xl mb-12 opacity-90">
+                    AIãé§ä½¿ãããã¨ã§ãå°ããªæéã¨ã¹ã­ã«ã§ããåå¥ãå¾ãããå¯è½ã«ãã¾ã
+                </p>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm">
+<i class="fas fa-graduation-cap text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">ãã­ã°ã©ãã³ã°ããç°¡å</h3>
+<p>ãã¼ãã«ãé«ãããªããæ«æãã«ããå­¦ç¿æ¹æ³</p>
+</div>
+<div class="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm">
+<i class="fas fa-moon text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">å¤æ´»ã§OK</h3>
+<p>å­ã©ããå¯ãå¾ã®æéãæå¹æ´»ç¨</p>
+</div>
+<div class="bg-white bg-opacity-20 p-6 rounded-xl backdrop-blur-sm">
+<i class="fas fa-robot text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">AIæ´»ç¨</h3>
+<p>ææ°ã®AIãã¼ã«ã§å¹ççã«ä½æ¥­</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Pillars Section -->
+<section class="py-16 bg-gray-50" id="program-details">
+<div class="container mx-auto px-4">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+<i class="fas fa-columns text-blue-600 mr-3"></i>
+                    4ã¤ã®æ±ã§ç¢ºå®ã«ã¹ãããã¢ãã
+                </h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- ã¾ãªã¶ -->
+<div class="feature-card bg-white p-8 rounded-xl card-shadow text-center">
+<div class="gradient-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="fas fa-book-open text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">1. ã¾ãªã¶</h3>
+<p class="text-gray-600 mb-4">åç»Ãã¯ã¼ã¯ã§ãã¼ã«ã®åºæ¬ããå­¦ç¿ãAIãæ´»ç¨ãã¦"æéãæ¸ããæ¹æ³"ãä¸¦è¡ãã¦ç¿å¾ã</p>
+<ul class="text-sm text-gray-500 text-left">
+<li>â¢ Slackåºæ¬æä½</li>
+<li>â¢ Notionæ´»ç¨æ³</li>
+<li>â¢ GASå¥é</li>
+<li>â¢ ChatGPTæ´»ç¨</li>
+</ul>
+</div>
+<!-- ã¤ãªãã -->
+<div class="feature-card bg-white p-8 rounded-xl card-shadow text-center">
+<div class="gradient-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="fas fa-users text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">2. ã¤ãªãã</h3>
+<p class="text-gray-600 mb-4">Slackã³ãã¥ããã£ã§ãåãå¢éã®ããã¨æå ±äº¤æãå­¤ç¬ãæããã«é²ããããã</p>
+<ul class="text-sm text-gray-500 text-left">
+<li>â¢ 24æéè³ªåOK</li>
+<li>â¢ ä»²éã¨ã®å±ã¾ãåã</li>
+<li>â¢ æå ±äº¤æ</li>
+<li>â¢ æ¡ä»¶å±æ</li>
+</ul>
+</div>
+<!-- ã¯ããã -->
+<div class="feature-card bg-white p-8 rounded-xl card-shadow text-center">
+<div class="bg-purple-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="fas fa-briefcase text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">3. ã¯ããã</h3>
+<p class="text-gray-600 mb-4">åæ¥­å¾ããã«ãã¡ãã£ã¨ããæ¥­åããã¹ã¿ã¼ããç¡çã®ãªãç¯å²ã§åå¥ãå¾ãã</p>
+<ul class="text-sm text-gray-500 text-left">
+<li>â¢ SNSæç¨¿ä¸æ¸ã</li>
+<li>â¢ è­°äºé²ãã§ãã¯</li>
+<li>â¢ ãã¼ã¿å¥å</li>
+<li>â¢ ç»åä½æ</li>
+</ul>
+</div>
+<!-- ã¤ã¥ãã -->
+<div class="feature-card bg-white p-8 rounded-xl card-shadow text-center">
+<div class="bg-pink-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="fas fa-infinity text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">4. ã¤ã¥ãã</h3>
+<p class="text-gray-600 mb-4">ãããããªç¿æ£åã¨ãã³ãã¥ããã£ã§ã®å±ã¾ãåãã§ãç¡çãããç¶ããããããå®ç¾ã</p>
+<ul class="text-sm text-gray-500 text-left">
+<li>â¢ åæ¥­å¾ããµãã¼ã</li>
+<li>â¢ ç¶ç¶çãªæ¡ä»¶ç´¹ä»</li>
+<li>â¢ ã¹ã­ã«ã¢ããæ¯æ´</li>
+<li>â¢ ä»²éã¨ã®çµ</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+<i class="fas fa-star text-yellow-400 mr-3"></i>
+                    é¸ã°ããçç±
+                </h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-blue-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-yen-sign text-blue-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">æ1ä¸åããå§ãããã</h3>
+<p class="text-gray-600">å°é¡å¶ã ããå®¶è¨ã«è² æããããã«ã¹ã¿ã¼ãå¯è½</p>
+</div>
+<div class="bg-green-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-moon text-green-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">å¤æ´»æéã§OK</h3>
+<p class="text-gray-600">å­ã©ããå¯ãå¾ã®æéãæå¹æ´»ç¨ãã©ã¤ãã¹ã¿ã¤ã«ã«åããã¦å­¦ç¿</p>
+</div>
+<div class="bg-purple-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-tools text-purple-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">å®è·µçãªãã¼ã«å­¦ç¿</h3>
+<p class="text-gray-600">Slackã»Notionã»GASãªã©ãä»äºã«ç´çµããã¹ã­ã«ãç¿å¾</p>
+</div>
+<div class="bg-red-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-robot text-red-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">AIæ´»ç¨æ¹æ³ãå®è·µã§å­¦ç¿</h3>
+<p class="text-gray-600">ChatGPTãç»åçæãæç« è¦ç´ãªã©ææ°AIæè¡ãæ´»ç¨</p>
+</div>
+<div class="bg-indigo-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-user-tie text-indigo-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">ã¨ã³ã¸ãã¢ä»£è¡¨ã«ãããµãã¼ã</h3>
+<p class="text-gray-600">æè¡çãªè³ªåãã ã­ã£ãªã¢ç¸è«ã¾ã§å°éå®¶ããã£ãããµãã¼ã</p>
+</div>
+<div class="bg-teal-50 p-8 rounded-xl card-shadow">
+<i class="fas fa-heart text-teal-500 text-3xl mb-4"></i>
+<h3 class="text-xl font-bold text-gray-800 mb-3">å®å¿ã§ããã³ãã¥ããã£</h3>
+<p class="text-gray-600">ãä¸å®ã«ãªã£ããè©±ããäººããããå®å¿æãå¤§åã«ããç°å¢</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-16 gradient-bg text-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-12">
+<i class="fas fa-gift mr-3"></i>
+                    ãããªæªæ¥ãå¾ã£ã¦ãã¾ã
+                </h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+<i class="fas fa-coffee text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">èªç±ã«ä½¿ãããé</h3>
+<p>ã¡ãã£ã¨ããããã¤ãå­ã©ãã®æå·ãã³ã¼ãã¼ä»£ãèªåã§ç¨¼ããããã«</p>
+</div>
+<div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+<i class="fas fa-smile text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">å¿ã®ä½ç½</h3>
+<p>çæ´»ã¨å¿ã«ä½ç½ãçã¾ããç©ãããªæ¯æ¥ãéãããããã«</p>
+</div>
+<div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm">
+<i class="fas fa-handshake text-4xl mb-4"></i>
+<h3 class="text-xl font-bold mb-3">ç¤¾ä¼ã¨ã®ã¤ãªãã</h3>
+<p>å­¤ç¬æããè§£æ¾ãããåãå¢éã®ä»²éã¨æ¯ãåããé¢ä¿æ§</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-16">
+<i class="fas fa-tags text-blue-600 mr-3"></i>
+                    æéãã©ã³
+                </h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white p-8 rounded-xl card-shadow">
+<h3 class="text-2xl font-bold text-gray-800 mb-4">ãã¼ã·ãã¯ãã©ã³</h3>
+<div class="text-4xl font-bold text-blue-600 mb-6">
+                            æé¡ <span class="text-5xl">10,000</span>å
+                        </div>
+<ul class="text-left space-y-3 mb-8">
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>åç»å­¦ç¿ã³ã³ãã³ã</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Slackã³ãã¥ããã£åå </li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>åºæ¬çãªè³ªåãµãã¼ã</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>æ1åã®ã°ã«ã¼ãç¸è«ä¼</li>
+</ul>
+<a class="btn-secondary text-white px-8 py-3 rounded-full font-semibold w-full block" href="#line-register">
+                            è©³ç´°ãè¦ã
+                        </a>
+</div>
+<div class="bg-white p-8 rounded-xl card-shadow border-4 border-green-400 relative">
+<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-400 text-white px-6 py-2 rounded-full font-bold">
+                            ãããã
+                        </div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4">ãã¬ãã¢ã ãã©ã³</h3>
+<div class="text-4xl font-bold text-green-600 mb-6">
+                            æé¡ <span class="text-5xl">15,000</span>å
+                        </div>
+<ul class="text-left space-y-3 mb-8">
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>ãã¼ã·ãã¯ãã©ã³ã®å¨åå®¹</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>åå¥ã¡ã³ã¿ãªã³ã°ï¼æ1åï¼</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>æ¡ä»¶ç´¹ä»ãµãã¼ã</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>åªåçãªè³ªåå¯¾å¿</li>
+<li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>åæ¥­å¾3ã¶æãµãã¼ã</li>
+</ul>
+<a class="btn-primary text-white px-8 py-3 rounded-full font-semibold w-full block" href="#line-register">
+                            è©³ç´°ãè¦ã
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+<i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    ããããè³ªå
+                </h2>
+<div class="space-y-6">
+<div class="bg-gray-50 p-6 rounded-xl">
+<h3 class="text-lg font-bold text-gray-800 mb-3">
+<i class="fas fa-q text-blue-600 mr-2"></i>æ¬å½ã«ITãè¦æã§ãå¤§ä¸å¤«ã§ããï¼
+                        </h3>
+<p class="text-gray-600 ml-6">
+<i class="fas fa-a text-green-600 mr-2"></i>å¤§ä¸å¤«ã§ãï¼ãã­ã°ã©ãã³ã°ã®ãããªé£ãããã¨ã¯ä¸åããã¾ãããæ®æ®µä½¿ã£ã¦ããã¹ããããã½ã³ã³ãã§ããã°ååã§ããAIãæ´»ç¨ãã¦ãé£ããä½æ¥­ã¯èªååãã¦ããã¾ãã
+                        </p>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl">
+<h3 class="text-lg font-bold text-gray-800 mb-3">
+<i class="fas fa-q text-blue-600 mr-2"></i>å­¦ç¿æéã¯ã©ã®ãããå¿è¦ã§ããï¼
+                        </h3>
+<p class="text-gray-600 ml-6">
+<i class="fas fa-a text-green-600 mr-2"></i>1æ¥30åã1æéç¨åº¦ãç®å®ã«ãã¦ãã¾ããå­ã©ããå¯ãå¾ã®ãå¤æ´»ãæéãæ´»ç¨ãã¦ãç¡çã®ãªããã¼ã¹ã§é²ãããã¾ãã
+                        </p>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl">
+<h3 class="text-lg font-bold text-gray-800 mb-3">
+<i class="fas fa-q text-blue-600 mr-2"></i>å®éã«ã©ã®ãããç¨¼ããããã«ãªãã¾ããï¼
+                        </h3>
+<p class="text-gray-600 ml-6">
+<i class="fas fa-a text-green-600 mr-2"></i>åäººå·®ã¯ããã¾ãããåæ¥­çã¯æ1ä¸åã5ä¸åç¨åº¦ã®åå¥ãå¾ã¦ãã¾ãããççºçãªåå¥ãã§ã¯ãªããããããã»é·ããç¶ããããç¯å²ã§ã®åå¥ãç®æãã¾ãã
+                        </p>
+</div>
+<div class="bg-gray-50 p-6 rounded-xl">
+<h3 class="text-lg font-bold text-gray-800 mb-3">
+<i class="fas fa-q text-blue-600 mr-2"></i>å­ã©ããå°ããã¦ãåå ã§ãã¾ããï¼
+                        </h3>
+<p class="text-gray-600 ml-6">
+<i class="fas fa-a text-green-600 mr-2"></i>ãããå°ããªãå­æ§ãããããã«ããåå ãã¦ããã ããããã­ã°ã©ã ã§ããåãå¢éã®ä»²éã¨æ¯ãåããªãããç¡çã®ãªããã¼ã¹ã§é²ãããã¾ãã
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 gradient-green text-white" id="line-register">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-8">
+<i class="fab fa-line text-4xl mr-3"></i>
+                    ã¾ãã¯ç¡æã§è©³ç´°ããã§ãã¯ï¼
+                </h2>
+<p class="text-xl mb-8 opacity-90">
+                    LINEã«ç»é²ãã¦ããã­ã°ã©ã ã®è©³ç´°è³æã¨<br/>
+                    ãAIãæ´»ç¨ããå¯æ¥­ã®å§ãæ¹ãç¡æåç»ããã¬ã¼ã³ãï¼
+                </p>
+<div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm mb-8">
+<h3 class="text-2xl font-bold mb-4">
+<i class="fas fa-gift mr-2"></i>
+                        LINEç»é²ç¹å¸
+                    </h3>
+<ul class="text-left space-y-2 max-w-md mx-auto">
+<li class="flex items-center"><i class="fas fa-check mr-3"></i>ãã­ã°ã©ã è©³ç´°è³æ</li>
+<li class="flex items-center"><i class="fas fa-check mr-3"></i>AIå¯æ¥­ã®å§ãæ¹åç»</li>
+<li class="flex items-center"><i class="fas fa-check mr-3"></i>ç¡æåå¥ç¸è«ä¼ã¸ã®æå¾</li>
+<li class="flex items-center"><i class="fas fa-check mr-3"></i>åè¼©ããã®ä½é¨è«</li>
+</ul>
+</div>
+<a class="bg-white text-green-600 px-12 py-4 rounded-full font-bold text-xl hover:bg-gray-100 inline-block" href="#">
+<i class="fab fa-line mr-3"></i>LINEåéè¿½å ã§ç¡æç»é²
+                </a>
+<p class="text-sm mt-4 opacity-75">
+                    â»ç»é²ã¯ç¡æã§ãããã¤ã§ãéä¿¡åæ­¢ã§ãã¾ãã
+                </p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<div class="text-3xl font-bold mb-4">
+<i class="fas fa-heart mr-2"></i>ããã­ã£ãªã¢
+                </div>
+<p class="text-gray-400 mb-8">
+                    ã·ã³ã°ã«ãã¶ã¼ã®æ°ããåãæ¹ãæ¯æ´ããAIã­ã£ãªã¢è²æãã­ã°ã©ã 
+                </p>
+<div class="border-t border-gray-600 pt-8">
+<p class="text-sm text-gray-400">
+                        Â© 2024 ããã­ã£ãªã¢. All rights reserved.
+                    </p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Smooth Scroll -->
 
 </body>
 </html>
+
+
