@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シングルマザー向けAIキャリア育成プログラム - 月1万円から始める新しい働き方</title>
+    <title>シングルマザー向けAIキャリア育成プログラム - ままてく</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,32 +13,72 @@
             font-family: 'Noto Sans JP', sans-serif;
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
         }
         .gradient-green {
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
         }
         .gradient-blue {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        }
+        .gradient-orange {
+            background: linear-gradient(135deg, #FF8C42 0%, #FFA726 100%);
+        }
+        .gradient-line-light {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+        }
+        .gradient-teal {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        }
+        .gradient-footer-teal {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
         }
         .card-shadow {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         .btn-primary {
-            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            background: linear-gradient(135deg, #00B900 0%, #00A000 100%);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(17, 153, 142, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 185, 0, 0.3);
         }
         .btn-secondary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
             transition: all 0.3s ease;
         }
         .btn-secondary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 8px 25px rgba(23, 162, 184, 0.3);
+        }
+        .btn-orange {
+            background: linear-gradient(135deg, #FF8C42 0%, #FFA726 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-orange:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 140, 66, 0.3);
+        }
+        .btn-white-line {
+            background: white;
+            color: #00B900;
+            border: 2px solid #00B900;
+            transition: all 0.3s ease;
+        }
+        .btn-white-line:hover {
+            background: #00B900;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 185, 0, 0.3);
+        }
+        .btn-teal {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-teal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(23, 162, 184, 0.3);
         }
         .feature-card {
             transition: transform 0.3s ease;
@@ -53,6 +93,19 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
+        .text-teal-custom {
+            color: #17a2b8;
+        }
+        .text-orange-custom {
+            color: #FF8C42;
+        }
+        .bg-teal-custom {
+            background-color: #17a2b8;
+        }
+        .pricing-card-border {
+            border: 4px solid #17a2b8;
+            box-shadow: 0 10px 30px rgba(23, 162, 184, 0.2);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -60,8 +113,8 @@
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-blue-600">
-                    <i class="fas fa-heart mr-2"></i>ママキャリア
+                <div class="text-2xl font-bold text-teal-custom">
+                    ままてく
                 </div>
                 <a href="#line-register" class="btn-primary text-white px-6 py-3 rounded-full font-semibold">
                     <i class="fab fa-line mr-2"></i>LINE登録
@@ -87,7 +140,7 @@
                     <a href="#line-register" class="btn-primary text-white px-8 py-4 rounded-full font-bold text-lg">
                         <i class="fab fa-line mr-2"></i>無料で詳細を受け取る
                     </a>
-                    <a href="#program-details" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100">
+                    <a href="#program-details" class="btn-orange text-white px-8 py-4 rounded-full font-bold text-lg">
                         <i class="fas fa-info-circle mr-2"></i>プログラム詳細
                     </a>
                 </div>
@@ -169,7 +222,7 @@
         <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
-                    <i class="fas fa-columns text-blue-600 mr-3"></i>
+                    <i class="fas fa-columns text-teal-custom mr-3"></i>
                     4つの柱で確実にステップアップ
                 </h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -190,7 +243,7 @@
                     
                     <!-- つながる -->
                     <div class="feature-card bg-white p-8 rounded-xl card-shadow text-center">
-                        <div class="gradient-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="gradient-orange text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i class="fas fa-users text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-4">2. つながる</h3>
@@ -282,7 +335,7 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16 gradient-bg text-white">
+    <section class="py-16 gradient-orange text-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12">
@@ -315,42 +368,29 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-16">
-                    <i class="fas fa-tags text-blue-600 mr-3"></i>
+                    <i class="fas fa-tags text-teal-custom mr-3"></i>
                     料金プラン
                 </h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white p-8 rounded-xl card-shadow">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">ベーシックプラン</h3>
-                        <div class="text-4xl font-bold text-blue-600 mb-6">
-                            月額 <span class="text-5xl">10,000</span>円
-                        </div>
-                        <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>動画学習コンテンツ</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Slackコミュニティ参加</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>基本的な質問サポート</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>月1回のグループ相談会</li>
-                        </ul>
-                        <a href="#line-register" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold w-full block">
-                            詳細を見る
-                        </a>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl card-shadow border-4 border-green-400 relative">
-                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-400 text-white px-6 py-2 rounded-full font-bold">
+                <div class="max-w-md mx-auto">
+                    <div class="bg-white p-8 rounded-xl pricing-card-border relative transform scale-105">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 gradient-teal text-white px-6 py-2 rounded-full font-bold">
                             おすすめ
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">プレミアムプラン</h3>
-                        <div class="text-4xl font-bold text-green-600 mb-6">
-                            月額 <span class="text-5xl">15,000</span>円
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">ベーシックプラン</h3>
+                        <div class="text-4xl font-bold text-teal-600 mb-6">
+                            <span class="text-5xl">¥9,800</span>
+                            <span class="text-lg font-normal text-gray-500">/月</span>
                         </div>
                         <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>ベーシックプランの全内容</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>個別メンタリング（月1回）</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>案件紹介サポート</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>優先的な質問対応</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>卒業後3ヶ月サポート</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>全カリキュラムへのアクセス</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>コミュニティ参加</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>月2回のグループ相談会</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>個別チャットサポート</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>実践課題の添削</li>
+                            <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-3"></i>案件紹介サービス</li>
                         </ul>
-                        <a href="#line-register" class="btn-primary text-white px-8 py-3 rounded-full font-semibold w-full block">
-                            詳細を見る
+                        <a href="#line-register" class="btn-teal text-white px-8 py-3 rounded-full font-semibold w-full block text-center">
+                            このプランを選ぶ
                         </a>
                     </div>
                 </div>
@@ -363,40 +403,40 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
-                    <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                    <i class="fas fa-question-circle text-teal-custom mr-3"></i>
                     よくある質問
                 </h2>
                 <div class="space-y-6">
                     <div class="bg-gray-50 p-6 rounded-xl">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">
-                            <i class="fas fa-q text-blue-600 mr-2"></i>本当にITが苦手でも大丈夫ですか？
+                        <h3 class="text-lg font-bold mb-3">
+                            <span class="text-teal-custom">Q.</span><span class="text-gray-800 ml-2">本当にITが苦手でも大丈夫ですか？</span>
                         </h3>
-                        <p class="text-gray-600 ml-6">
-                            <i class="fas fa-a text-green-600 mr-2"></i>大丈夫です！プログラミングのような難しいことは一切やりません。普段使っているスマホやパソコンができれば十分です。AIを活用して、難しい作業は自動化していきます。
+                        <p class="ml-6">
+                            <span class="text-orange-custom font-medium">A.</span><span class="text-gray-800 ml-2">大丈夫です！プログラミングのような難しいことは一切やりません。普段使っているスマホやパソコンができれば十分です。AIを活用して、難しい作業は自動化していきます。</span>
                         </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-xl">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">
-                            <i class="fas fa-q text-blue-600 mr-2"></i>学習時間はどのくらい必要ですか？
+                        <h3 class="text-lg font-bold mb-3">
+                            <span class="text-teal-custom">Q.</span><span class="text-gray-800 ml-2">学習時間はどのくらい必要ですか？</span>
                         </h3>
-                        <p class="text-gray-600 ml-6">
-                            <i class="fas fa-a text-green-600 mr-2"></i>1日30分〜1時間程度を目安にしています。子どもが寝た後の「夜活」時間を活用して、無理のないペースで進められます。
+                        <p class="ml-6">
+                            <span class="text-orange-custom font-medium">A.</span><span class="text-gray-800 ml-2">1日30分〜1時間程度を目安にしています。子どもが寝た後の「夜活」時間を活用して、無理のないペースで進められます。</span>
                         </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-xl">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">
-                            <i class="fas fa-q text-blue-600 mr-2"></i>実際にどのくらい稼げるようになりますか？
+                        <h3 class="text-lg font-bold mb-3">
+                            <span class="text-teal-custom">Q.</span><span class="text-gray-800 ml-2">実際にどのくらい稼げるようになりますか？</span>
                         </h3>
-                        <p class="text-gray-600 ml-6">
-                            <i class="fas fa-a text-green-600 mr-2"></i>個人差はありますが、卒業生は月1万円〜5万円程度の収入を得ています。「爆発的な収入」ではなく、「ゆるく・長く」続けられる範囲での収入を目指します。
+                        <p class="ml-6">
+                            <span class="text-orange-custom font-medium">A.</span><span class="text-gray-800 ml-2">個人差はありますが、卒業生は月1万円〜5万円程度の収入を得ています。「爆発的な収入」ではなく、「ゆるく・長く」続けられる範囲での収入を目指します。</span>
                         </p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-xl">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">
-                            <i class="fas fa-q text-blue-600 mr-2"></i>子どもが小さくても参加できますか？
+                        <h3 class="text-lg font-bold mb-3">
+                            <span class="text-teal-custom">Q.</span><span class="text-gray-800 ml-2">子どもが小さくても参加できますか？</span>
                         </h3>
-                        <p class="text-gray-600 ml-6">
-                            <i class="fas fa-a text-green-600 mr-2"></i>むしろ小さなお子様がいるママにこそ参加していただきたいプログラムです。同じ境遇の仲間と支え合いながら、無理のないペースで進められます。
+                        <p class="ml-6">
+                            <span class="text-orange-custom font-medium">A.</span><span class="text-gray-800 ml-2">むしろ小さなお子様がいるママにこそ参加していただきたいプログラムです。同じ境遇の仲間と支え合いながら、無理のないペースで進められます。</span>
                         </p>
                     </div>
                 </div>
@@ -405,20 +445,18 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="line-register" class="py-16 gradient-green text-white">
+    <section id="line-register" class="py-16 gradient-line-light text-gray-800">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">
-                    <i class="fab fa-line text-4xl mr-3"></i>
                     まずは無料で詳細をチェック！
                 </h2>
-                <p class="text-xl mb-8 opacity-90">
+                <p class="text-xl mb-8">
                     LINEに登録して、プログラムの詳細資料と<br>
                     「AIを活用した副業の始め方」無料動画をプレゼント！
                 </p>
-                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur-sm mb-8">
+                <div class="bg-white bg-opacity-50 p-8 rounded-xl backdrop-blur-sm mb-8">
                     <h3 class="text-2xl font-bold mb-4">
-                        <i class="fas fa-gift mr-2"></i>
                         LINE登録特典
                     </h3>
                     <ul class="text-left space-y-2 max-w-md mx-auto">
@@ -428,7 +466,7 @@
                         <li class="flex items-center"><i class="fas fa-check mr-3"></i>先輩ママの体験談</li>
                     </ul>
                 </div>
-                <a href="#" class="bg-white text-green-600 px-12 py-4 rounded-full font-bold text-xl hover:bg-gray-100 inline-block">
+                <a href="#" class="btn-white-line px-12 py-4 rounded-full font-bold text-xl">
                     <i class="fab fa-line mr-3"></i>LINE友達追加で無料登録
                 </a>
                 <p class="text-sm mt-4 opacity-75">
@@ -439,18 +477,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="gradient-footer-teal text-white py-12">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="text-3xl font-bold mb-4">
-                    <i class="fas fa-heart mr-2"></i>ママキャリア
+                    ままてく
                 </div>
-                <p class="text-gray-400 mb-8">
+                <p class="text-white opacity-90 mb-8">
                     シングルマザーの新しい働き方を支援するAIキャリア育成プログラム
                 </p>
-                <div class="border-t border-gray-600 pt-8">
-                    <p class="text-sm text-gray-400">
-                        © 2024 ママキャリア. All rights reserved.
+                <div class="border-t border-white border-opacity-30 pt-8">
+                    <p class="text-sm text-white opacity-70">
+                        © 2024 ままてく. All rights reserved.
                     </p>
                 </div>
             </div>
@@ -476,9 +514,9 @@
 </html>
     <script id="html_badge_script1">
         window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
-            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDgGhfdFNfsId3o7pv3mU8hWklLRmkDjLfDMm8YekhKgVflrfrjKi9EUfTornumLzVoJpKih9PKRXjSKQ9Rbu1b9AIS1denfplEPZuwTkjqv2VSuj4XvY5KaKwi%2F1rE3CEJ8w3UKP6WFi%2BvrxnvC1Ky3fH6NPdMtoFhHFD41qfgXwOXBhmL%2Bch3kLUA1xZEX6NM4vMOwinYImO9OyTiPV%2BLuAzmtYQ3sQXIfFNWVUn3wnOWujOIPL7zXN0NiWr%2F527ahoBX3i4RUmtOrqTIMPsfppX6Wk6IhH39G1gOsXv5dfigcdToy3leUx0XnsKP2CY54IEayA1pZ8Hznu6yvqho0GbmZuMcnAwmcbbHg5vboIwdFBBMdxSbLzZHVyDBqynRWDhGMBxxHofPI9XZXfG7mYG7a%2F3dtO%2BuJthfw7Ob5Ye5XeycLwOn1CUMRhmcJMoz47pjZkEb6TRTqo3Jy%2FHXM%2Br12XHR7d2uQjgk0dDTDunvrtZl7m1XREF1Csk7MimWS70QfOppOahMgiIauT%2B1M%3D";
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDuB7290lkFw5AYnqOhSZCV3SLni3GLsVofHU9LtdFJlvBWdJgOM6pEqM4wGXkYpgV5e3Rjpb3rpaQv2thSK1h2MeELqvkmqLU2MN3QEUC%2BajWMcg1n3g%2BwZbeq5s61YUEdy%2Bj4ciBOvY43FsWkmn08XaoPpcKBHEYq%2FdddLNdEIeX23HetSbbpC54b6LKeKfK%2B5qu91g2lUZNOUxPPSXY2t6Hz4qiPf5eGVNVI%2BZH921zrLLGjKj6Ucc%2BYCcrLLRtsIQxYCBcNhDy2CFD1V%2FHK%2FSKU6tMBfP%2B5l7XgUvhQnSNpVGAw7s0poCT3KZSzmKXGhxhC1n7%2BOLS26RtSv7vkPlWcEHLbhFxfR4RkCBRWWuXmSx05Twrbn2Mhn48ZNV%2Bka2TyF8hP6XJRWSrd80cegPxlM2GBcqSmylXrS1QU%2FJ2qP3BfQKc7IMEvssfOOHqlnsbBECyZA2cE3muYKar8ZsqY%2B2%2B1VvPKzcaxuqCLNubl9d9TgqAr1opuNVvJHLMw%3D%3D";
         window.__genspark_locale = "ja-JP";
-        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDgGhfdFNfsId3o7pv3mU8hWklLRmkDjLfDMm8YekhKgVflrfrjKi9EUfTornumLzVoJpKih9PKRXjSKQ9Rbu1b9AIS1denfplEPZuwTkjqv2VSuj4XvY5KaKwi/1rE3CEJ8w3UKP6WFi+vrxnvC1Ky3fH6NPdMtoFhHFD41qfgXwOXBhmL+ch3kLUA1xZEX6NM4vMOwinYImO9OyTiPV+LuAzmtYQ3sQXIfFNWVUn3wnOWujOIPL7zXN0NiWr/527ahoBX3i4RUmtOrqTIMPsfppX6Wk6IhH39G1gOsXv5dfigcdToy3leUx0XnsKP2CY54IEayA1pZ8Hznu6yvqho0GbmZuMcnAwmcbbHg5vboIwdFBBMdxSbLzZHVyDBqynRWDhGMBxxHofPI9XZXfG7mYG7a/3dtO+uJthfw7Ob5Ye5XeycLwOn1CUMRhmcJMoz47pjZkEb6TRTqo3Jy/HXM+r12XHR7d2uQjgk0dDTDunvrtZl7m1XREF1Csk7MimWS70QfOppOahMgiIauT+1M=";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDuB7290lkFw5AYnqOhSZCV3SLni3GLsVofHU9LtdFJlvBWdJgOM6pEqM4wGXkYpgV5e3Rjpb3rpaQv2thSK1h2MeELqvkmqLU2MN3QEUC+ajWMcg1n3g+wZbeq5s61YUEdy+j4ciBOvY43FsWkmn08XaoPpcKBHEYq/dddLNdEIeX23HetSbbpC54b6LKeKfK+5qu91g2lUZNOUxPPSXY2t6Hz4qiPf5eGVNVI+ZH921zrLLGjKj6Ucc+YCcrLLRtsIQxYCBcNhDy2CFD1V/HK/SKU6tMBfP+5l7XgUvhQnSNpVGAw7s0poCT3KZSzmKXGhxhC1n7+OLS26RtSv7vkPlWcEHLbhFxfR4RkCBRWWuXmSx05Twrbn2Mhn48ZNV+ka2TyF8hP6XJRWSrd80cegPxlM2GBcqSmylXrS1QU/J2qP3BfQKc7IMEvssfOOHqlnsbBECyZA2cE3muYKar8ZsqY+2+1VvPKzcaxuqCLNubl9d9TgqAr1opuNVvJHLMw==";
     </script>
     
     <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
